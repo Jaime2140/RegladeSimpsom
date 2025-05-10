@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Simpson 1/3</title>
+</head>
+<body>
+    <div class="Menu">
+        <h1>Método de Simpson 1/3</h1>
+        <form action="/MetodosNumericos" method="POST">
+            <div class="Inputs">
+                <label for="Funcion">Ingresa la función:</label>
+                <input type="text" id="Funcion" name="Funcion" required size="25">
+
+                <label for="ValorA">Ingresa el valor de A:</label>
+                <input type="text" id="ValorA" name="ValorA" required size="10">
+
+                <label for="ValorB">Ingresa el valor de B:</label>
+                <input type="text" id="ValorB" name="ValorB" required size="10">
+
+                <button type="submit">Calcular</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
